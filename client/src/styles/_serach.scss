@@ -1,0 +1,28 @@
+.search {
+  margin: 15px 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  input {
+    flex-grow: 1;
+    border: none;
+    text-align: center;
+    font-size: 1.05rem;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    border-radius: 0;
+    border: none;
+    background: rgba($dark-color, 0.85);
+    color: rgba($light-color, 0.85);
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
