@@ -1,0 +1,52 @@
+.card {
+  margin: 12px;
+  width: 380px;
+  height: 420px;
+
+  &__header {
+    width: 100%;
+    height: 70%;
+    // border-bottom: 0.2rem solid black;
+    // border-radius: 0 0 5px 5px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.experience {
+      border-bottom: 0.3rem solid $red;
+    }
+
+    &.good {
+      border-bottom: 0.3rem solid $blue;
+    }
+
+    &.eductaion {
+      border-bottom: 0.3rem solid $orange;
+    }
+
+    &.service {
+      border-bottom: 0.3rem solid $green;
+    }
+  }
+
+  &__body {
+    width: 100%;
+    height: 30%;
+    background: $light-color;
+    color: $dark-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .name {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .price {
+      font-weight: 700;
+    }
+  }
+}

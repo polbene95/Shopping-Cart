@@ -9,17 +9,33 @@
     flex-grow: 1;
     border: none;
     text-align: center;
-    font-size: 1.05rem;
+    font-size: 1.5rem;
+    border-radius: 5px 0 0 5px;
+
     &:focus {
       outline: none;
+    }
+
+    &.orange {
+      border-left: 0.25rem solid $orange;
+    }
+
+    &.green {
+      border-left: 0.25rem solid $green;
+    }
+
+    &.red {
+      border-left: 0.25rem solid $red;
     }
   }
 
   button {
     border-radius: 0;
     border: none;
-    background: rgba($dark-color, 0.85);
-    color: rgba($light-color, 0.85);
+    background: $orange;
+    color: rgba($dark-color, 0.85);
+    font-size: 1.5rem;
+    border-radius: 0 5px 5px 0;
 
     &:focus {
       outline: none;
